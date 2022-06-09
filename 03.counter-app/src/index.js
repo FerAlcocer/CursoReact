@@ -1,45 +1,56 @@
-// import React, { Fragment } from 'react';
-import React from 'react';
-import PropTypes from 'prop-types';
+// // import React, { Fragment } from 'react';
+// import React from 'react';
+// import PropTypes from 'prop-types';
 
 
-const PrimeraApp = ( { saludo, subtitulo } ) => {
+// const PrimeraApp = ( { saludo, subtitulo } ) => {
 
-  // if (!saludo ) {
-  //   throw new Error( 'El saludo es necesario ' );
+//   // if (!saludo ) {
+//   //   throw new Error( 'El saludo es necesario ' );
 
-  // }
+//   // }
 
-//    return (
-//         <Fragment>
-//            <h1>Hola Mundo</h1>
-//            <p>Mi primera aplicación</p>
-//         </Fragment>  
+// //    return (
+// //         <Fragment>
+// //            <h1>Hola Mundo</h1>
+// //            <p>Mi primera aplicación</p>
+// //         </Fragment>  
+// //     ); 
+//   // const saludo= 'Hola mundo'
+
+//   // console.log( props );
+//     // const saludo = {
+//     //     Nombre: 'Fernando',
+//     //     Edad: 28
+//     // }
+// return (
+//         <>
+//            <h1>{saludo}!</h1>
+//            {/* <pre> { JSON.stringify( saludo, null, 3 ) } </pre> */}
+//            <p>{subtitulo}</p>
+//         </>  
 //     ); 
-  // const saludo= 'Hola mundo'
-
-  // console.log( props );
-    // const saludo = {
-    //     Nombre: 'Fernando',
-    //     Edad: 28
-    // }
-return (
-        <>
-           <h1>{saludo}!</h1>
-           {/* <pre> { JSON.stringify( saludo, null, 3 ) } </pre> */}
-           <p>{subtitulo}</p>
-        </>  
-    ); 
      
-}
+// }
 
-PrimeraApp.propTypes = {
-  saludo: PropTypes.string.isRequired
-}
+// PrimeraApp.propTypes = {
+//   saludo: PropTypes.string.isRequired
+// }
 
-PrimeraApp.defaultProps = {
-  saludo: 'Hola, soy Goku',
-  subtitulo: 'Soy un subtitulo'
-}
+// PrimeraApp.defaultProps = {
+//   saludo: 'Hola, soy Goku',
+//   subtitulo: 'Soy un subtitulo'
+// }
 
-export default PrimeraApp;
+// export default PrimeraApp;
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import PrimeraApp from './PrimeraApp';
+
+import './index.css';
+import AplicacionContador from './AplicacionContador';
+
+const divRoot= document.querySelector('#app');
+ 
+ReactDOM.render( <AplicacionContador value={10} /> , divRoot );
